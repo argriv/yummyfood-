@@ -1,0 +1,156 @@
+.header {
+  background: white;
+  padding: 20px 0;
+  min-height: 88.422px;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+@media (max-width: 1024px) {
+  .header {
+    padding: 15px 0;
+  }
+}
+@media(max-width: 400px) {
+  .header {
+    padding: 10px 0;
+  }
+}
+.header-form__search {
+  flex: 0 1 40%;
+}
+.header-mobile__block {
+ width: 100%;
+}
+.block-mobile__top {
+  display: flex;
+  margin: 0px 0px 30px 0px;
+  justify-content: space-between;
+}
+@media(max-width: 450px) {
+  .block-mobile__top {
+    margin: 0px 0px 15px 0px;
+  }
+}
+.sticky {
+  position:initial;
+  top: 0;
+  transition: all 0.5s ease-out;
+  z-index: 10;
+}
+
+.anticon {
+  padding: 0;
+}
+@media (max-width: 760px) {
+    .header {
+      display: block;
+    }
+    .header >*:not(:last-child){
+      margin-bottom: 20px;
+    }
+}
+
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 760px) {
+    .logo {
+      justify-content: center;
+    }
+}
+@media (max-width: 450px) {
+    .hedaer__logo {
+      width: 45px;
+    }
+}
+.logo-items{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.logo-items h1 {
+  font-size: 21px;
+}
+.logo-items div {
+  font-size: 13px;
+  color: gray;
+}
+@media (max-width: 450px) {
+  .logo-items {
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .logo-items h1 {
+    font-size: 18px;
+  }
+  .logo-items div {
+    display: none;
+  }
+}
+.bt {
+  font-size: 16px;
+}
+.interaction {
+  display: flex;
+  flex-direction: colum;
+  align-items: center;
+  justify-content: space-between;
+}
+.interaction >*:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media(max-width: 900px) {
+  .interaction > *:not(:last-child) {
+    margin-right: 0px;
+}
+}
+.interaction-button {
+  border: none;
+  height: 40px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: #1890ff;
+  background: #1890ff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.interaction-profil {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0px 8px;
+  background: #1890ff;
+  transition: all 0.3s ease 0s;
+}
+.interaction_profil-img {
+  font-size: 21px;
+  font-weight: 300;
+  border-radius: 20px;
+  padding-right: 5px;
+}
+.interaction-profil:hover {
+  background-color:#188fff31;
+  color: rgba(0, 100, 194, 0.438);
+}
+.interaction_profil-lable {
+
+  transition: all 0.3s ease 0s;
+}

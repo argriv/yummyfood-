@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+  font-family:"Nunito";
+  font-weight: 400; 
+}
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+input, textarea {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+textarea {
+  resize: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-weight: 400;
+}
+h1 {
+  letter-spacing: 0.02em;
+  font-size: 40px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 25px;
+}
+div, nav, p, span, button, input, a, form, ul, li, textarea, *:before, *:after {
+  box-sizing: border-box;
+}
+a, a:hover, a:active, a:focus, button, input, button:hover, button:active, button:focus, input:focus, input:active, textarea, textarea:focus, textarea:active {
+  text-decoration: none;
+  outline: none;
+}
+input {
+  outline: none;
+  text-decoration: none;
+  border-radius: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.wrapper {
+  border-radius: 10px;
+  height: 100%;
+  margin: auto;
+  max-width: 1400px;
+  width: calc(100vw - 100px);
+  overflow: hidden;
+}
+@media(max-width: 1024px) {
+  .wrapper {
+    width: inherit;
+  }
+}
+.container {
+  padding: 0px 25px;
+  background-color: #fff;
+}
+@media(max-width: 1024px) {
+  .container {
+    padding: 0px 15px;
+  }
+}
+/* полоса прокрутки (скроллбар) */
+::-webkit-scrollbar {
+  width: 15px; /* ширина для вертикального скролла */
+  height: 10px; /* высота для горизонтального скролла */
+  background-color: rgba(218, 218, 218, 0);
+}
+@media (max-width: 750px) {
+    ::-webkit-scrollbar {
+        width: 7.5px;
+        height: 5px;
+    }
+}
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(190, 190, 190, 0.849);;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255 81 0);;
+}
+.ant-layout-header {
+  padding: 0px 8px
+}
+.ant-form-horizontal .ant-form-item-control {
+  margin: 0px;
+}
+.ant-btn-primary {
+  border-radius: 20px;
+}
+.anticon.ant-input-clear-icon, .ant-input-clear-icon{ 
+  font-size: 16px;
+}
+.ant-btn {
+  height: 41px;
+  padding: 0px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-btn-ghost {
+  color: rgb(255 81 0);
+  border-color: rgb(255 81 0);
+  background: transparent;
+  border-radius: 20px;
+}
+.ant-btn-ghost:hover {
+  color: #ffffff;
+  border-color: #ff5100;
+  background: #ff5100;
+}
+.ant-btn:hover.active {
+  background-color: #fff;
+  color: #ff5100;
+}
+.ant-btn-ghost:focus {
+  color: rgb(255 81 0);
+  border-color: #ff5100;
+}
+.ant-btn:hover {
+  color: #ffffff;
+  border-color: #ff5100;
+  background: #ff5100;
+}
+.ant-btn-default {
+  padding: 26px 22px;
+  border-radius: 50%;
+}
+
+@import '~antd/dist/antd.css'

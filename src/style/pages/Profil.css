@@ -1,0 +1,114 @@
+.profil {
+  width: 544px;
+  display: flex; 
+  padding: 15px 10px 0px 10px;
+}
+.profil_content {
+  padding: 30px;
+  flex: 0 1 450px;
+}
+@media(max-width: 450px) {
+  .profil {
+    width: 100%;
+    display: flex;
+    padding: 0px;
+  }
+}
+@media(max-width: 450px) {
+  .profil_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+  }
+}
+.ant-card {
+  cursor: pointer;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+.ant-card:hover {
+  border-color: transparent;
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+@media(max-width: 450px) {
+  .conten-profil_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.content_subscription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription_info {
+  cursor: pointer;
+}
+@media(max-width: 450px) {
+  .subscription_info {
+    padding-left: 20px !important;
+  }
+}
+.content_history {
+  margin-bottom: 20px;
+}
+.ant-card-cover {
+  padding: 50px;
+}
+.anticon-gift {
+  font-size: 70px;
+}
+.anticon-gift svg {
+  color: white;
+  background: 
+		linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%),
+		linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+    border-radius: 10px;
+}
+.profil-card_info {
+  font-size: 20px;
+  text-align: center;
+}
+.profil_arrow{
+  display: block;
+  position: fixed;
+  margin-left: -2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dddddd;
+  border-radius: 20px;
+  height: 38px;
+  width: 38px;
+  z-index: 5;
+  transition: all 0.3s ease 0s;
+}
+@media(max-width: 450px) {
+  .profil_arrow {
+    height: 30px;
+    width: 30px;
+  }
+}
+.profil_arrow:hover, .profil_arrow:focus {
+  background: black;
+}
+.arrow-profil_back {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  display: flex;
+  width: 14px;
+  height: 14px;
+  border-top:  2px solid rgb(255, 255, 255);
+  border-left:  2px solid rgb(255, 255, 255);
+  border-right:  2px;
+}
+.arrow-back {
+  transform: rotate(-45deg);
+}

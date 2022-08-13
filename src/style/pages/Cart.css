@@ -1,0 +1,251 @@
+.carts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 40px 0px;
+}
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cart-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart-top_title {
+  font-family: inherit;
+  display: flex;
+  letter-spacing: 0.02em;
+  font-size: 35px;
+  font-weight: 700;
+}
+.cart-top_title span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart-top_title span svg {
+  color: #252627;
+  font-size: 46px;
+}
+@media(max-width: 550px) {
+  .cart-top_title h1{
+    letter-spacing: 0.02em;
+    font-size: 30px;
+  }
+  .cart-top_title span svg {
+    color: #252627;
+    font-size: 35px;
+  }
+}
+@media (max-width: 450px) {
+  .cart-top_title h1 {
+    letter-spacing: 0.02em;
+    font-size: 23px;
+  }
+}
+.cart-top_clear {
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: normal;
+  background-color: transparent;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(128, 128, 128, 0.541);
+  cursor: pointer;
+}
+.cart-top_clear span {
+  transition: all 0.3s ease 0s;
+}
+.cart-top_clear:hover span {
+  color: rgb(78, 78, 78);
+}
+@media(max-width: 550px) {
+  .cart-top_clear {
+    font-size: 14px;
+  }
+}
+.cart-items {
+  padding: 30px 0px 30px 0px;    
+  border-top: 1px solid rgb(223 223 223 / 43%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+@media(max-width: 550px) {
+  .cart-items {
+    position: relative;
+    flex-direction: column;
+  }
+}
+.cart-img {
+  margin: 0px 20px 0px 0px;
+  flex: 0 1 20%;
+}
+.cart-img img{
+  max-width: 100%;
+}
+@media(max-width: 550px) {
+  .cart-img {
+    margin: 0px;
+  }
+}
+@media(max-width: 550px) {
+  .cart-img {
+    width: 200px;
+  }
+}
+.cart-title {
+  flex: 0 1 40%;
+  white-space:nowrap;  
+  font-family: inherit;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cart-title h1 {
+  font-size: 20px;
+  font-family: unset;
+}
+@media(max-width: 550px) {
+  .cart-title h1 {
+    font-size: 16px; 
+  }
+}
+.cart-price {
+  flex: 0 1 33%;
+  font-family: inherit;    
+  font-size: 20px;
+}
+.cart-count {
+  flex: 0 1 13%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .cart-count{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.cart-count button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.cart-count b {
+    font-size: 18px;
+}
+.cart-close button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.close {
+  flex: 0 1 4%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+@media(max-width: 550px) {
+  .cart-close {
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+}
+.total-pizza {
+  font-weight: 700;
+}
+.total-order {
+  padding-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  font-size: 20px;
+}
+@media(max-width:550px) {
+  .total-order >:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.color-order {
+  margin: 0px 0px 0px 5px;
+  color: orangered;
+}
+.ant-result-icon span{
+  width: 150px;
+  height: 150px;
+}
+.ant-result-icon span svg{
+  min-width: 100%;
+  min-height: 100%;
+}
+.ant-result-title {
+  font-weight: bold;
+}
+
+.ant-result-subtitle {
+  font-weight: bold;
+}
+.ant-result-extra {
+  transition: all 0.3s ease 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-interactiv {
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width: 350px) {
+  .cart-interactiv >:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+.anticon {
+  padding: 0px 5px 0px 0px;
+  font-size: 20px;
+}
+.bt {
+  background: #1890ff;
+  border-radius: 20px;
+  color: white;
+  height: 41px;
+  padding: 0px 12px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transition: all 0.3s ease 0s;
+}
+.bt:hover {
+  background-color:#188fff31;  
+}
+.bt:hover span svg {
+  background:none;
+  visibility: visible;
+  transform: translateX(-20px) ;
+}

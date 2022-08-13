@@ -1,0 +1,25 @@
+.cart {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  height: 40px;
+  padding: 0px 13px;
+  align-items: center;
+  background: #ff5100;
+  border-radius: 20px;
+  color: white;
+}
+@media(max-width: 925px) {
+  .cart {
+    display: none;
+  } 
+}
+.cart-info {
+  white-space:nowrap;
+  padding: 0px 14px 0px 0px;
+  margin: 0px 6px 0px 0px;
+  border-right: 1px solid rgba(231, 231, 231, 0.253);
+}
+.cart-count span {
+  padding-right: 5px;
+}

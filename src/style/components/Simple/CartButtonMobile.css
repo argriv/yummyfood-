@@ -1,0 +1,58 @@
+.cart__mobile {
+  display: none;
+  position: fixed;
+  bottom: 12%;
+  right: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 20%) 0px 10px 20px;
+  transition: all 0.25s ease 0s;
+  user-select: none;
+  z-index: 3;
+}
+@media(max-width: 925px) {
+  .cart__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media(max-width: 900px) {
+  .cart__mobile {
+    right: 25px;
+  }
+}
+@media(max-width: 450px) {
+  .cart__mobile {
+    right: 16px;
+  }
+}
+.anticon-shopping {
+  font-size: 40px;
+}
+.ant-badge {
+  box-sizing: border-box;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px; 
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum';
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+.ant-badge-count, .ant-badge-dot, .ant-badge .ant-scroll-number-custom-component {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  color: #ffff;
+  background: #ff5100;
+  font-weight: 800;
+}
+
